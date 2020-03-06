@@ -1,0 +1,124 @@
+// =======================================
+//  Global variables 
+// =======================================
+
+$header-height: 70px;
+$Menu-width: 264px;
+$Menu-collapsed-width: 70px;
+
+// color list for build layouts
+$primary-color: #2196f3;
+$warning-color: #FF9800;
+$danger-color: #ff6347; //#f44336;
+$success-color: #4caf50;
+$purple-color: #7759de;
+$info-color: #00ACC1;
+$secondary-color: #748892;
+$default-color: #d6d6d6;
+$light-color: #ECEFF1;
+$dark-color: #263238;
+$inverse-color: $dark-color;
+$theme-border: #e2e5e8;
+$dark-primary: #212525;  //#242e3e - blue, 27293d - purple Idemia, #08090d - black ;
+
+// header
+$header-dark-background: $dark-primary;
+$header-dark-text-color: #fff;
+$header-light-background: #fff;
+$header-light-text-color: $dark-primary;
+
+// Menu
+$menu-dark-background: $dark-primary; //Dark sidebar menu, if no image background
+$menu-dark-text-color: #b5bdca;
+$menu-light-background: #fff;
+$menu-light-text-color: $dark-primary;
+$menu-active-color: $primary-color; //color for Active item highliter
+
+// dark layout colors
+$dark-layout:  darken($dark-primary, 5%); 
+//linear-gradient(to top, $dark-primary, lighten($dark-primary, 10%), $dark-primary); 
+//darken($dark-primary,8%);
+$dark-layout-font: #adb7be;
+$dark-border: lighten($dark-layout, 40%);
+
+
+// Menu icon
+$menu-icon-color: #2196f3, #f44336, #01a9ac ,#7759de , #00ACC1, $warning-color;
+// Header background
+$color-header-name: blue, red, purple, info, dark;
+$color-header-color: #2196f3, #f44336, #7759de ,#00ACC1,$dark-primary;
+// Menu background
+$color-menu-name: blue, red, purple, info, dark;
+$color-menu-color: #2196f3, #f44336, #7759de ,#00ACC1,$dark-primary;
+
+// Menu background gradient
+$color-menu-gradient-name: blue, red, purple, info, dark;
+$color-menu-gradient-color: linear-gradient(to bottom, #7759de 0%, #2196f3 100%),
+linear-gradient(to bottom, rgb(164, 69, 178) 0%, rgb(212, 24, 114) 52%, rgb(255, 0, 102) 100%),
+linear-gradient(to top, rgb(178, 117, 240) 0%, rgb(117, 117, 240) 100%) ,
+linear-gradient(to bottom, rgb(1, 169, 172) 0%, rgb(1, 219, 223) 100%),
+linear-gradient(to bottom, rgb(36, 46, 62) 0%, rgb(58, 76, 103) 100%);
+
+// Active background color
+$color-active-name: blue, red, purple, info, dark;
+$color-active-color: #2196f3, #f44336, #7759de ,#00ACC1,$dark-color;
+ // Menu title color
+$color-title-name: blue, red, purple, info, dark;
+$color-title-color: #2196f3, #f44336, #7759de ,#00ACC1,$dark-color;
+
+$theme-font-family: "Mada",sans-serif;
+$theme-font-size: 14px;
+$theme-background: #eff3f6;
+$theme-font-color: #686c71;
+$theme-heading-color: #111;
+
+$color-name: c-blue,c-red,c-green,c-yellow,c-purple;
+$color-color: $primary-color,$danger-color,$success-color ,$warning-color ,$purple-color;
+$color-bt-name: primary,danger,success,warning,info,purple;
+$color-bt-color: $primary-color,$danger-color,$success-color ,$warning-color ,$info-color,$purple-color;
+
+// form-control variables
+$form-bg: #f0f3f6;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(("primary": $primary-color, "secondary": $secondary-color, "success": $success-color, "info": $info-color, "warning": $warning-color, "danger": $danger-color, "light": $light-color, "dark": $dark-color, "purple": $purple-color), $theme-colors);
+// Color contrast
+$yiq-contrasted-threshold: 200 !default;
+$yiq-dark-color: #37474f;
+$yiq-light-color: #fff;
+$theme-color-interval: 8% !default;
+$alert-bg-level: -10 !default;
+$alert-border-level: -9 !default;
+$alert-color-level: 6 !default;
+
+// social color variables
+$social-name: facebook,twitter,dribbble,pinterest,youtube,googleplus,instagram,viber,behance,dropbox,linkedin;
+$social-color: #3C5A99,#42C0FB,#EC4A89,#BF2131,#E0291D,#C73E2E,#AA7C62,#7B519D,#0057ff,#3380FF,#0077B5;
+
+%shadow-top {
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.39) !important;
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.39) !important;
+}
+
+%shadow-box {
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+%shadow-modal {
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.81) !important; 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.81) !important;
+}
+
+%light-shadow{
+  box-shadow: 0 5px 5px -3px rgba(255, 255, 255, 0.2),
+  0 8px 10px 1px rgba(255, 255, 255, 0.14),
+  0 3px 14px 2px rgba(255, 255, 255, 0.12);
+}
+
+%highlight-backlit{
+  // -webkit-box-shadow: 0px 0px 8px 1px rgba(255,255,255,0.5); 
+  // box-shadow: 0px 0px 8px 1px rgba(255,255,255,0.5);
+  -webkit-box-shadow: 0px 3px 8px -2px rgba(255,255,255,0.5); 
+box-shadow: 0px 3px 8px -2px rgba(255,255,255,0.5);
+}

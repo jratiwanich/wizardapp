@@ -1,0 +1,46 @@
+@import '../../node_modules/angular-archwizard/variables.scss';
+
+aw-wizard.i2-wizard{
+  // Generate styles for our custom wizard
+  //@include wz-define-layout-styles();
+
+  // Some styles cannot be redefined using SCSS.  Fall back to CSS here
+  aw-wizard-navigation-bar.horizontal ul.steps-indicator li {
+    &.current {
+      .label {
+        color: $header-dark-text-color;
+      }
+      .step-indicator {
+          border:1px solid $light-color;    
+          background-color: $warning-color !important;
+          border-radius:50%;
+          width: 20px;
+          height: 20px;
+          margin-top: -2px;
+      }
+
+    }
+
+    &:not(:last-child):before{
+      background-color:  $header-dark-text-color !important;
+      height: 2px !important;
+    }
+  }
+
+  aw-wizard-step{
+    border: 1px solid $light-color;
+    border-radius: 5px;
+    padding: 12px;
+
+    .centered-content {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .center{
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+  

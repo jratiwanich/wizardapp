@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles here */
+
+@import "scss/variables";
+@import "scss/general";
+@import "scss/wizard";
+
+/* fonts-icon */
+// @import "scss/fonts/fontawesome/scss/fontawesome";
+// @import "scss/fonts/feather/iconfont";
+
+// @import "scss/general";
+// @import "scss/generic";
+// @import "scss/mixins/function";
+
+// /* important element */
+// @import "scss/menu/menu-lite";
+// @import "scss/menu/menu-ng";
+
+// /* basic elements */
+// @import "scss/theme-elements/theme-elements";
+
+// /* advance-other elements */
+// @import "scss/other/other";
+
+// /* third party modules style*/
+// @import "scss/plugins/plugins";
+
+// @import "scss/layout/layout";
+// @import "scss/custom";
+// @import "scss/widget/widget";
+
+// //@import '~ngx-toastr/toastr';
+// //@import '~ngx-toastr/toastr-bs4-alert';
+
+// /* i2Access styling */
+// @import "scss/badge";
+// @import "scss/modal";
+// @import "scss/button";
+// @import "scss/table-custom";
+
+// @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
